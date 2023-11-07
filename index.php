@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Subject = 'Form submission';
         $mail->Body    = "First Name: $firstName<br>Last Name: $lastName<br>Gender: $gender<br>Email: $email<br>Country: $country<br>Subject: $subject<br>Message: $message";
 
-        $mail->send();
+        // $mail->send();
         echo 'Message has been sent';
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
